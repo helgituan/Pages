@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/app', // Adjust according to your deployment setup
-  assetPrefix: '/app/', // Adjust according to your deployment setup
-  images: {
-    loader: 'default',
-    path: '/public/',
-  },
+  basePath: '/Pages', // Adjust according to your deployment setup
+  assetPrefix: '/Pages/', // Adjust according to your deployment setup
 };
 
 module.exports = nextConfig;
