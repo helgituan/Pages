@@ -1,12 +1,15 @@
 {
   "name": "websiteforgit",
+  "homepage": "https://helgituan.github.io/Pages",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && gh-pages -d out",
+    "predeploy": "next build && next export"
   },
   "dependencies": {
     "@emotion/css": "^11.11.2",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "gh-pages": "^6.1.1",
     "typescript": "^5"
   }
 }
