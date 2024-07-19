@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/Pages' : '', // Adjust according to your deployment setup
+  basePath: isProd ? '/public' : '', // Adjust according to your deployment setup
   assetPrefix: '/Pages/', // Adjust according to your deployment setup
 };
 
