@@ -4,8 +4,8 @@
 
 const nextConfig = {
   output: 'export',
-  /*basePath: isProd ? '/public' : '', // Adjust according to your deployment setup */
-  basePath: 'public', // Adjust according to your deployment setup
+  basePath: isProd ? '/Pages' : '', // Adjust according to your deployment setup 
+  /*basePath: '/Pages', // Adjust according to your deployment setup */
   assetPrefix: '/Pages/', // Adjust according to your deployment setup
 };
 
