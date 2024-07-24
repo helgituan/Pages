@@ -3,6 +3,11 @@ import Image from "next/image";
 import styled from "@emotion/styled";
 import me from "../public/me.jpg";
 import email from "../public/email.svg";
+import phone from "../public/phone.svg";
+import birthday from "../public/birthday.svg";
+import webdev from "../public/webdev.svg";
+import webdesign from "../public/webdesign.svg";
+import phonedev from "../public/phonedev.svg";
 
 interface LinkProps {
   disabled?: boolean;
@@ -195,11 +200,11 @@ const Page = () => {
           <p>helgiftw@gmail.com</p>
         </AboutMeUnderline>
         <AboutMeUnderline>
-          <Image src="/phone.svg" alt="Me" width={50} height={20} />
+          <Image src={phone} alt="Me" width={50} height={20} />
           <p>+354 7722236</p>
         </AboutMeUnderline>
         <AboutMeUnderline>
-          <Image src="/birthday.svg" alt="Me" width={50} height={20} />
+          <Image src={birthday} alt="Me" width={50} height={20} />
           <p>23/03/1995</p>
         </AboutMeUnderline>
       </AboutMe>
@@ -236,7 +241,7 @@ const Page = () => {
           <ContentDiv>
             <ContentContainer>
               <Logo>
-                <Image src="/webdev.svg" alt="Logo 1" width={50} height={50} />
+                <Image src={webdev} alt="Logo 1" width={50} height={50} />
               </Logo>
               <TitleAndText>
                 <Title>Framendaforritari</Title>
@@ -249,12 +254,7 @@ const Page = () => {
             </ContentContainer>
             <ContentContainer>
               <Logo>
-                <Image
-                  src="/phonedev.svg"
-                  alt="Logo 2"
-                  width={50}
-                  height={50}
-                />
+                <Image src={phonedev} alt="Logo 2" width={50} height={50} />
               </Logo>
               <TitleAndText>
                 <Title>App Hönnuður</Title>
@@ -265,12 +265,7 @@ const Page = () => {
             </ContentContainer>
             <ContentContainer>
               <Logo>
-                <Image
-                  src="/webdesign.svg"
-                  alt="Logo 2"
-                  width={50}
-                  height={50}
-                />
+                <Image src={webdesign} alt="Logo 2" width={50} height={50} />
               </Logo>
               <TitleAndText>
                 <Title>UX/UI Hönnuður</Title>

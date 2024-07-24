@@ -8,7 +8,9 @@ const nextConfig = {
   /*basePath: '/Pages', // Adjust according to your deployment setup */
   assetPrefix: '/Pages/', // Adjust according to your deployment setup
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './ImageLoader.js',
+    path: '/',
   }
 };
 
