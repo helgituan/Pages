@@ -184,20 +184,26 @@ const Page = () => {
     <OverviewDiv>
       <AboutMe>
         <div>
-          <Image src="/me.jpg" alt="Me" width={140} height={200} />
+          <Image unoptimized src="/me.jpg" alt="Me" width={140} height={200} />
         </div>
         <Name>Helgi Tuan Helgason</Name>
         <Line />
         <AboutMeUnderline>
-          <Image src="/email.svg" alt="Me" width={50} height={20} />
+          <Image unoptimized src="/email.svg" alt="Me" width={50} height={20} />
           <p>helgiftw@gmail.com</p>
         </AboutMeUnderline>
         <AboutMeUnderline>
-          <Image src="/phone.svg" alt="Me" width={50} height={20} />
+          <Image unoptimized src="/phone.svg" alt="Me" width={50} height={20} />
           <p>+354 7722236</p>
         </AboutMeUnderline>
         <AboutMeUnderline>
-          <Image src="/birthday.svg" alt="Me" width={50} height={20} />
+          <Image
+            unoptimized
+            src="/birthday.svg"
+            alt="Me"
+            width={50}
+            height={20}
+          />
           <p>23/03/1995</p>
         </AboutMeUnderline>
       </AboutMe>
