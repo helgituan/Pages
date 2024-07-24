@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import styled from "@emotion/styled";
+import me from "../public/me.jpg";
+import email from "../public/email.svg";
 
 interface LinkProps {
   disabled?: boolean;
@@ -184,12 +186,12 @@ const Page = () => {
     <OverviewDiv>
       <AboutMe>
         <div>
-          <Image src="/me.jpg" alt="Me" width={140} height={200} />
+          <Image src={me} alt="Me" width={140} height={200} />
         </div>
         <Name>Helgi Tuan Helgason</Name>
         <Line />
         <AboutMeUnderline>
-          <Image src="/email.svg" alt="Me" width={50} height={20} />
+          <Image src={email} alt="Me" width={50} height={20} />
           <p>helgiftw@gmail.com</p>
         </AboutMeUnderline>
         <AboutMeUnderline>
