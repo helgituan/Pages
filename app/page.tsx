@@ -156,9 +156,13 @@ const ContentDiv = styled.div`
   gap: 10px;
   justify-content: center;
 
+  @media (mex-width: 900px) {
+    flex-direction: column;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 `;
 
