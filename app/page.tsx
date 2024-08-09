@@ -15,10 +15,15 @@ interface LinkProps {
 
 const OverviewDiv = styled.div`
   background-color: #2d2d2d;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px;
+  }
 `;
 
 const Header = styled.div`
@@ -33,6 +38,11 @@ const Header = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px;
+  }
 `;
 
 const Link = styled.a<LinkProps>`
@@ -49,6 +59,10 @@ const Link = styled.a<LinkProps>`
   &:hover {
     background-color: ${(props) => (props.disabled ? "initial" : "#333")};
   }
+
+  @media (max-width: 768px) {
+    padding: 10px 15px;
+  }
 `;
 
 const Divider = styled.div`
@@ -56,6 +70,12 @@ const Divider = styled.div`
   width: 1px;
   background-color: #fff;
   margin: 0 10px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 1px;
+    margin: 5px 0;
+  }
 `;
 
 const MainDiv = styled.div`
@@ -66,7 +86,12 @@ const MainDiv = styled.div`
   padding: 0;
   border-radius: 10px;
   margin-left: 20px;
-  flex: 1; /* Allows MainDiv to take the remaining space */
+  flex: 1;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 `;
 
 const AboutMe = styled.div`
@@ -76,20 +101,27 @@ const AboutMe = styled.div`
   background-color: #1a1a1a;
   padding: 50px;
   border-radius: 10px;
-  width: 300px; /* Optional: Sets a fixed width for AboutMe */
+  width: 300px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px;
+  }
 `;
 
 const Name = styled.h3`
   margin: 25px 0 25px 0;
 `;
+
 const PictureDiv = styled.div`
   margin: 10px;
   border-radius: 10px;
 `;
+
 const Line = styled.hr`
   width: 100%;
   border: 1px solid white;
-  margin: 10px 0; /* Adjust spacing as needed */
+  margin: 10px 0;
 `;
 
 const AboutMeUnderline = styled.div`
@@ -97,11 +129,25 @@ const AboutMeUnderline = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  align-items: center; /* Aligns items in the center vertically */
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    text-align: center;
+
+    p {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+  }
 `;
 
 const MainContent = styled.div`
   padding: 50px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const ContentDiv = styled.div`
@@ -109,6 +155,11 @@ const ContentDiv = styled.div`
   display: flex;
   gap: 10px;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 const AboutMeTitle = styled.h3`
@@ -127,6 +178,13 @@ const AboutMeTitle = styled.h3`
     background-color: #f0f0f0;
     margin: 10px auto 0;
   }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    &::after {
+      width: 80%;
+    }
+  }
 `;
 
 const AboutMeText = styled.p`
@@ -140,6 +198,11 @@ const AboutMeText = styled.p`
   background-color: #333;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 15px;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -153,16 +216,27 @@ const ContentContainer = styled.div`
   gap: 20px;
   background-color: #333;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 15px;
+  }
 `;
 
 const Logo = styled.div`
   width: 50px;
   height: 50px;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -171,7 +245,11 @@ const TitleAndText = styled.div`
   flex-direction: column;
   flex: 1;
   align-items: flex-start;
-  justify-content: center; /* Ensures title is centered vertically */
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
 `;
 
 const Title = styled.h4`
@@ -179,12 +257,20 @@ const Title = styled.h4`
   font-weight: bold;
   color: #d3d3d3;
   margin: 0 0 5px 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const SmallText = styled.p`
   font-size: 14px;
   color: #d3d3d3;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 const Page = () => {
   return (
