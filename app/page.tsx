@@ -347,9 +347,12 @@ const Page = () => {
                 <Image src={phonedev} alt="Logo 2" width={50} height={50} />
               </Logo>
               <TitleAndText>
-                <Title>App Hönnuður</Title>
+                <Title>Forritari</Title>
                 <SmallText>
-                  Framúrskarandi notendaviðmót með ágætan grunn í React Native
+                  Ég er opinn fyrir því að starfa sem forritari og hef jákvætt
+                  hugarfar gagnvart því að læra nýja hluti. Ég er tilbúinn að
+                  taka áskoranir og þróa hæfileika mína enn frekar til að ná
+                  árangri í starfi.
                 </SmallText>
               </TitleAndText>
             </ContentContainer>
